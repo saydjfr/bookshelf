@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="head-bar"> 
+    <h1 class="title-header"> BOOKSHELF APPS</h1>
+</header>
+<main>
+    <div class="container-form">
+        <section class="form-input">
+            <div class="form-title">  
+                <h2 class="title-form">Masukan Informasi Buku</h2>
+            </div>
+            <form action="" id="bookform" class="bookform">
+                <div class="input">
+                    <label for="inputTitle">Judul Buku</label>
+                    <input type="text" name="inputTitle" id="inputTitle" placeholder="Masukan Judul Buku" required>
+                </div>
+                <div class="input">
+                    <label for="inputAuthor">Author</label>
+                    <input type="text" name="inputAuthor" id="inputAuthor" placeholder="Masukan nama author" required>
+                </div>
+                <div class="input">
+                    <label for="inputYear">Tahun Terbit</label>
+                    <input type="text" name="inputYear" id="inputYear" placeholder="Tahun Terbit" required>
+                </div>
+                <div class="button-submit">
+                    <button id="bookSubmit" type="submit"> 
+                        <strong>
+                            <span class="button-add">
+                                add new +
+                            </span>
+                        </strong>
+                        </button>
+                </div>
+            </form>
+        </section>
+        <div class="history">
+            <section class="history-book">
+                <div class="title-history">
+                    <h2>Riwayat Buku</h2>
+                </div>
+                <div class="search-book">
+                    <form action="" id="searchBook" class="formSearchBook">
+                        <input id="searchBook" required type="text" placeholder="Masukan Judul Untuk Mencari">
+                        <button id="searchSubmit" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="container-listbook">
+                    <h3>Daftar Buku yang ditambahkan</h3>
+                    <div class="list-book" id="allBook">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <hr>
+    <div class="container-rak">
+        <div class="title-rak">
+            <h2>RAK BUKU</h2>
+            <hr class="underline">
+        </div>
+        <div class="item-rak">
+            <div class="unread">
+                <h3>Rak Buku Belum dibaca</h3>
+                <div class="item-list" id="uncompletedBooks" >
+                </div>
+            </div>
+            <div class="read">
+                <h3>Rak Buku Sudah dibaca</h3>
+                <div class="item-list" id="completedBooks">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+</body>
+</html>
